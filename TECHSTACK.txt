@@ -1,0 +1,13 @@
+===========================
+        TECH STACK        
+===========================
+
+| Technology       | Purpose                                      |
+|------------------|----------------------------------------------|
+| Arduino UNO      | Microcontroller to control the system        |
+| C++ (Arduino IDE)| Programming logic and sensor interfacing     |
+| Sound Sensors    | Detect ambulance siren sound                 |
+| LEDs             | Simulate traffic lights (Red/Yellow/Green)   |
+| LCD Display      | Display detection messages                   |
+| Breadboard/Wires | Hardware prototyping and electrical wiring   |
+| Traffic Logic    | Change signals based on ambulance detection  |
