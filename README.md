@@ -27,7 +27,7 @@ A simple Arduino-based project that detects ambulance sirens using sound sensors
 ## 🧰 Components Required
 
 - Arduino Uno
-- 4 × Sound Sensors
+- 4 × LM393 Sound Sensors (modified with 10k potentiometer)
 - 3 × LEDs (Red, Yellow, Green)
 - 16x2 LCD Display
 - Potentiometer (for LCD contrast)
