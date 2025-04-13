@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "Your Name",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno1", "top": -50, "left": 20, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno2", "top": -50, "left": 350, "attrs": {} },
+    { "type": "wokwi-sound-sensor", "id": "sensor1", "top": -150, "left": 350, "attrs": {} },
+    { "type": "wokwi-sound-sensor", "id": "sensor2", "top": -200, "left": 420, "attrs": {} },
+    { "type": "wokwi-sound-sensor", "id": "sensor3", "top": -150, "left": 20, "attrs": {} },
+    { "type": "wokwi-sound-sensor", "id": "sensor4", "top": -200, "left": 90, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": 131.2,
+      "left": 351.2,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-led", "id": "red", "top": 130, "left": 20, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "yellow",
+      "top": 180,
+      "left": 20,
+      "attrs": { "color": "yellow" }
+    },
+    { "type": "wokwi-led", "id": "green", "top": 230, "left": 20, "attrs": { "color": "green" } }
+  ],
+  "connections": [
+    [ "sensor1:GND", "uno2:GND", "black", [] ],
+    [ "sensor1:VCC", "uno2:5V", "red", [] ],
+    [ "sensor1:OUT", "uno2:2", "blue", [] ],
+    [ "sensor2:GND", "uno2:GND", "black", [] ],
+    [ "sensor2:VCC", "uno2:5V", "red", [] ],
+    [ "sensor2:OUT", "uno2:3", "blue", [] ],
+    [ "sensor3:GND", "uno1:GND", "black", [] ],
+    [ "sensor3:VCC", "uno1:5V", "red", [] ],
+    [ "sensor3:OUT", "uno1:2", "blue", [] ],
+    [ "sensor4:GND", "uno1:GND", "black", [] ],
+    [ "sensor4:VCC", "uno1:5V", "red", [] ],
+    [ "sensor4:OUT", "uno1:3", "blue", [] ],
+    [ "lcd:GND", "uno2:GND", "black", [] ],
+    [ "lcd:VCC", "uno2:5V", "red", [] ],
+    [ "lcd:SDA", "uno2:A4", "blue", [] ],
+    [ "lcd:SCL", "uno2:A5", "green", [] ],
+    [ "red:C", "uno1:GND", "black", [] ],
+    [ "red:A", "uno1:4", "red", [] ],
+    [ "yellow:C", "uno1:GND", "black", [] ],
+    [ "yellow:A", "uno1:5", "orange", [] ],
+    [ "green:C", "uno1:GND", "black", [] ],
+    [ "green:A", "uno1:6", "green", [] ]
+  ],
+  "dependencies": {}
+}
