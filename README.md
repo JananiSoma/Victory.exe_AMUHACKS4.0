@@ -20,7 +20,7 @@ A simple Arduino-based project that detects ambulance sirens using sound sensors
 |---------------------|--------|
 | **Sensor 1**        | Only **Green** light turns ON. LCD shows: `Ambulance Detected` |
 | **Sensor 2**        | All lights (Red, Yellow, Green) turn ON.|
-| **Sensor 3**        | No change in the display and traffic lights but detects the movement of the ambulance. |
+| **Sensor 3**        | Green light is turned to facilitate smooth travel of the ambulance. |
 | **Sensor 4**        | **Red** light stays ON. LCD shows: `Ambulance Passed` |
 
 ---
