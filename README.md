@@ -47,8 +47,11 @@ This system mimics how future smart traffic signals can help prioritize emergenc
 - Add more sound sensors for accurate direction sensing.
 - Include timers or real-time clocks for scheduled light control.
 - Integrate GPS or IoT for live ambulance tracking and coordination.
+---
 
-
+## Simulation - Wowki
+- https://wokwi.com/projects/428143912348105729
+---
 ## 👩‍💻 Developed By
 
 **Janani Somasundaram**  
